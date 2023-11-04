@@ -798,3 +798,8 @@ drop table recipe cascade constraints;
 drop table recipe_ingredients cascade constraints;
 drop table shoplist cascade constraints;
 drop table shoplist_recipes cascade constraints;
+drop table ingredient cascade constraints;
+drop table recipe cascade constraints;
+drop table recipe_ingredients cascade constraints;
+drop table shoplist cascade constraints;
+drop table shoplist_recipes cascade constraints;
