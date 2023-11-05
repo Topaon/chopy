@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import sg.corporation.chopy.entity.Ingredient;
+import sg.corporation.chopy.entity.Recipe;
 import sg.corporation.chopy.util.MyOracleConnector;
 
 @RestController
@@ -24,7 +25,7 @@ public class IngredientRestCtrl {
 	}
 	
 	@GetMapping("/recipe/{id}")
-	public String getRecipe(@PathVariable(name = "id") int id){
+	public Recipe getRecipe(@PathVariable(name = "id") int id){
 		return MyOracleConnector.getRecipeWithId(id);
 	}
 }
